@@ -1,0 +1,25 @@
+#nav{
+    font-family: Georgia, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:45px ;
+    background-color: #1D24CA;
+    text-decoration: none;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+body{
+    background-color: #CCD3CA;
+}
+.big{
+    margin-left: 5px;
+    margin-right: 5px;
+    
+
+    
+}
