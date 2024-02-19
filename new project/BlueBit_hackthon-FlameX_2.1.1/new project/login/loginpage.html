@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style> body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #c7d2f6;
+      }
+      
+      
+      .container {
+        /* top: 100px; */
+        max-width: 470px;
+        height: 450px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(10, 8, 8, 0.3) ;
+            /* border: #817cb2 2px solid; */
+            /* border-radius: 50px; */
+      }
+      .container:hover{
+        box-shadow: 70px  ;
+        box-shadow:0px 0px 20px rgb(4, 62, 169) ;  }
+      
+      
+      .form-container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      
+      .form {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 20px;
+        border-radius: 50px;
+      
+      }
+       .user-login,.filter{
+        margin-top:30px ;
+      } 
+      
+      .form h2 {
+        margin-bottom: 10px;
+      }
+      
+      .form label {
+        margin-bottom: 5px;
+      }
+      /* InPUTTTTT */
+      
+      .form input {
+        padding: 20px;
+        margin-bottom: 10px;
+        width: 90%;
+        outline: none;
+        border-radius: 10px;
+      }
+      .filter {
+        position: relative;
+      }
+      
+      input::placeholder{
+        font-size: 1.2rem;
+        color: black;
+      }
+      
+      .info{
+        position: absolute;
+        top: -8px;
+        left: 28px;
+        padding: 5px;
+        font-size: 1.2rem;
+        pointer-events: none;
+        background-color: white;
+        border-top: 1px solid black;
+        border-radius: 50px;
+        
+      }
+      
+      
+      
+      /* end */
+      
+      /* BUTTON */
+      .form button {
+        padding: 15px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: transform 0.3s;
+      }
+      
+      .form button:hover {
+        transform: scale(0.9); /* Shrink the button on hover */
+        background-color: #4f7fb3;
+      }
+      
+      .form p {
+        margin-top: 10px;
+        text-align: center;
+      }
+      
+      .form a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      
+      .hidden {
+        display: none;
+      }
+      
+      
+      .user-signup{
+        margin-top: 50px;
+      }
+      
+      
+      .SignUpFilter {
+        position: relative;
+      }
+      h2{
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: center;
+      }
+      .Signupfilter{
+        margin-top: 10px;
+      }
+      .fog-pas{
+        margin-top: 20px;
+      }
+      .inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 100px;
+      }
+      .user-logo{
+    background-color: rgb(10, 8, 8,.3);
+        height: 100px;
+        width: 100px;
+        border-top: 4px solid black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+      }
+      .user-logo:hover{
+        box-shadow: 70px  ;
+        box-shadow:0px 0px 20px rgb(4, 62, 169) ;  }
+
+        .log-butt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 100px;
+        }
+        .log-butt button{
+            font-size: 1.2rem;
+            width: 350px;
+            height: 50px;
+            border: none;
+            background-color: rgba(10, 8, 8, .3);
+        }
+        .log-butt button:hover{
+        box-shadow: 70px  ;
+        box-shadow:0px 0px 20px rgb(4, 62, 169) ;  }
+
+        .log-butt-sign{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 10px;
+        }
+        .log-butt-sign button{
+            font-size: 1.2rem;
+            width: 350px;
+            height: 50px;
+            border: none;
+            background-color: rgba(10, 8, 8, .3);
+        }
+        .log-butt-sign button:hover{
+        box-shadow: 70px  ;
+        box-shadow:0px 0px 20px rgb(4, 62, 169) ;  }
+
+        #switchToLogin{
+            color: aliceblue;
+        }
+        #switchToSignUp {
+            color: aliceblue;
+
+        }
+        .forgt{
+            margin-top: 20px;
+        }
+        #forgotPassword {
+            
+            margin-left: 300px;
+            color: aliceblue;
+        }
+
+      </style>
+</head>
+<body>
+   <div class="inner"> <div class="user-logo"><i class="fa-regular fa-user"></i></div></div>
+    <div class="container">
+        <div class="form-container" id="formContainer">
+          <form id="loginForm" class="form">
+            
+           <div class="user-login">
+              <div class="filter">
+                  <input style="border: none;"  type="text" id="loginUsername" name="loginUsername" placeholder="Username" required>
+                  <!-- <label class="info" for="loginUsername">Username</label> -->
+               </div>
+               <div class="filter">
+                  <input style="border: none;"    type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+                  <!-- <label class="info"  for="loginPassword">Password</label> -->
+               </div>
+           </div>
+    
+           <div class="forgt"> <a href="#" id="forgotPassword">Forgot Password?</a></div>
+            <p>Don't have an account? <a href="#" id="switchToSignUp">Sign Up</a></p>
+            <div class="log-butt"><button type="submit"><a href="../Explore/index1.html">Login</a> <i class="fa-solid fa-right-to-bracket"></i></button></div>
+          </form>
+         
+
+         
+           <form id="signUpForm" class="form hidden">
+
+            <div class="user-signup">
+              <div class="Signupfilter">
+                  <input  style="border: none;" type="text" id="signupUsername" name="signUpUsername" placeholder="First Name" required>
+              </div>
+              <div class="Signupfilter">
+                  <input  style="border: none;" type="text" id="signupUsername" name="signUpUsername" placeholder="Last Name" required>
+              </div>
+              <div class="Signupfilter">
+                  <!-- <label class="info" for="signUpUsername" >Email</label> -->
+                  <input  style="border: none;" type="text" id="signupUsername" name="signUpUsername" placeholder="Email" required>
+              </div>
+              <div class="Signupfilter">
+                  <!-- <label class="info" for="signUpUsername" >Password</label> -->
+                  <input  style="border: none;" type="text" id="signupUsername" name="signUpUsername" placeholder="Password" required>
+              </div>
+              </div>
+      
+            <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            <div class="log-butt-sign"><button type="submit"><a >sign up</a> <i class="fa-solid fa-right-to-bracket"></i></button></div>
+
+          </form> 
+        </div>
+      </div>
+      
+      
+      <script src="script.js">document.getElementById('switchToSignUp').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('loginForm').classList.add('hidden');
+        document.getElementById('signUpForm').classList.remove('hidden');
+        
+      document.getElementById("user-info").focus();
+      });
+      
+      document.getElementById('switchToLogin').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('signUpForm').classList.add('hidden');
+        document.getElementById('loginForm').classList.remove('hidden');
+        document.getElementById("user-info").focus();
+      });</script>
+    
+</body>
+</html>
